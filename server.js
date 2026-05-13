@@ -1,11 +1,10 @@
 // Import Express
 const express = require('express');
 const app = express();
+const l1Controller = require('./controllers/lesson1')
 
 // Define a route
-app.get('/', (req, res) => {
-    res.send('Welcome to the Express.js Tutorial 😀');
-});
+app.use('/', require('./routes'));
 
 // Start the server
 app.listen(3000, () => {
