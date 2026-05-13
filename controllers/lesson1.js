@@ -8,5 +8,5 @@ const alandGreetings = (req, res) => {
 
 module.exports = {
     idxGreetings,
-    alandGreetings
+    alandGreetings,
 }
